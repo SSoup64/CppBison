@@ -21,7 +21,7 @@
 #undef YY_DECL
 #define YY_DECL Frontend::Parser::symbol_type Frontend::Lexer::get_next_token()
 
-#include "Parser.h" // this is needed for symbol_type
+#include <Frontend/Parser.h> // this is needed for symbol_type
 
 namespace Frontend {
 	class Lexer : public yyFlexLexer {

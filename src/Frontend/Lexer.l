@@ -2,8 +2,8 @@
 	#include <iostream>
 	#include <string>
 	#include <cstdio>
-	#include "Lexer.h"
-	#include "Parser.h"
+	#include <Frontend/Lexer.h>
+	#include <Frontend/Parser.h>
 
 	#define yyterminate() Frontend::Parser::make_EOF();
 %}

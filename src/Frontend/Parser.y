@@ -26,8 +26,8 @@
 {
 	#include <iostream>
 
-	#include "Lexer.h"
-	#include "Parser.h"
+	#include <Frontend/Lexer.h>
+	#include <Frontend/Parser.h>
 
     static Frontend::Parser::symbol_type yylex(Frontend::Lexer& lexer)
 	{

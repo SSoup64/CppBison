@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 
-#include "Frontend/Lexer.h"
-#include "Frontend/Parser.h"
+#include <Frontend/Lexer.h>
+#include <Frontend/Parser.h>
 
 int main()
 {

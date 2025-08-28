@@ -1,7 +1,7 @@
 TARGET      := a.out
 
 CXX         := g++
-CXXFLAGS    := -Wall -Wextra
+CXXFLAGS    := -Wall -Wextra -Isrc
 
 BISON		:= bison
 BISONFLAGS	:= -o src/Frontend/Parser.cpp
