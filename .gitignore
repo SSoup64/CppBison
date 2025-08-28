@@ -39,9 +39,9 @@
 
 ## The following entries were manually added.
 ### Flex ###
-Frontend/Lexer.cpp
+src/Frontend/Lexer.cpp
 
 ### Bison ###
-Frontend/Parser.cpp
-Frontend/Parser.h
+src/Frontend/Parser.cpp
+src/Frontend/Parser.h
 

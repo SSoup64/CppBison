@@ -1,4 +1,4 @@
-%header "Frontend/Parser.h"
+%header "src/Frontend/Parser.h"
 %require "3.8"
 
 // C++ specific options
