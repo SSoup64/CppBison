@@ -14,6 +14,8 @@
 	#include <iostream>
 	#include <string>
 
+	#include <Types.h>
+
 	namespace Frontend
 	{
 		class Lexer;
@@ -40,7 +42,7 @@
 
 // Parser parameters
 %parse-param { Frontend::Lexer& lexer }
-%parse-param { int& result }
+%parse-param { Int32& result }
 
 // Error catching
 %define parse.assert
@@ -51,20 +53,20 @@
 %define api.token.prefix {TOKEN_}
 
 // Define the tokens
-%token			EOF 0
-%token<int>		LITERAL_INT
-%token			PLUS MINUS STAR SLASH
+%token				EOF 0
+%token<Int32>		LITERAL_INT
+%token				PLUS MINUS STAR SLASH
 
 // Define the non-terminals
-%start			root
+%start				root
 
-%type<int>		expr root
+%type<Int32>		expr root
 
 // Define associativity
-%nonassoc		LITERAL_INT
-%left			PLUS MINUS
-%left			STAR SLASH
-%right			LPAREN RPAREN
+%nonassoc			LITERAL_INT
+%left				PLUS MINUS
+%left				STAR SLASH
+%right				LPAREN RPAREN
 
 %%
 

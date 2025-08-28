@@ -1,12 +1,14 @@
+#include <Types.h>
+
 #include <iostream>
 #include <fstream>
 
 #include <Frontend/Lexer.h>
 #include <Frontend/Parser.h>
 
-int main()
+IntSize main()
 {
-	int result;
+	Int32 result;
 
 	Frontend::Lexer lexer;
 	Frontend::Parser parser(lexer, result);
