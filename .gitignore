@@ -45,3 +45,14 @@ src/Frontend/Lexer.cpp
 src/Frontend/Parser.cpp
 src/Frontend/Parser.h
 
+### Rizsotto/Bear ###
+compile_commands.json
+.cache
+
+
+
+
+
+
+
+
