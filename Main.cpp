@@ -1,5 +1,5 @@
 #include <iostream>
-#include <sstream>
+#include <fstream>
 
 #include "Frontend/Lexer.h"
 #include "Frontend/Parser.h"
@@ -11,11 +11,12 @@ int main()
 	Frontend::Lexer lexer;
 	Frontend::Parser parser(lexer, result);
 
-	std::string userInput;
-	std::getline(std::cin, userInput);
-	std::istringstream iss(userInput);
+	std::fstream fs;
+	fs.open("./test.code");
 
-	lexer.switch_streams(&iss, nullptr);
+	std::string userInput;
+
+	lexer.switch_streams(&fs, nullptr);
 	
 	parser.parse();
 
